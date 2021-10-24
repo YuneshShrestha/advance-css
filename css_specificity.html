@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .btn_div{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        /* Specifity (inline-css, id, class, element) */
+        /* (0,0,1,0) */
+        /* 3rd */
+        .btn{
+            background-color: black;
+            color: white;
+        }
+        /* Specifity (inline-css, id, class, element) */
+        /* (0,1,2,0) */
+        /* 1st */
+        .btn_div #just_div .btn{
+            background-color: blueviolet;
+            color: white;
+        }
+        /* Specifity (inline-css, id, class, element) */
+        /* (0,0,3,0) */
+        /* 2nd */
+        .btn_div .center .btn{
+            background-color: tomato;
+            color: white;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="btn_div">
+        <div class="center" id="just_div">
+            <div class="btn">Hello</div>
+        </div>
+    </div>
+</body>
+</html>
