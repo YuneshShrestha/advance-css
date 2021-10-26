@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.center {
+  background-color: #141452;
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.center .layer {
+  position: relative;
+}
+
+.center .layer .register_btn {
+  background-color: blueviolet;
+  color: white;
+  padding: 10px 20px;
+  font-size: 30px;
+  margin: 8px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.center .layer::before {
+  content: "";
+  width: 18%;
+  height: 50%;
+  top: 0%;
+  left: 0%;
+  border-top: 4px solid blueviolet;
+  border-left: 4px solid blueviolet;
+  position: absolute;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.center .layer::after {
+  content: "";
+  width: 18%;
+  height: 50%;
+  right: 0%;
+  bottom: 0%;
+  border-right: 4px solid blueviolet;
+  border-bottom: 4px solid blueviolet;
+  position: absolute;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.center .layer:hover::after, .center .layer:hover::before {
+  width: 95%;
+  height: 85%;
+  -webkit-transition: linear 0.5s;
+  transition: linear 0.5s;
+}
+/*# sourceMappingURL=btn_hover.css.map */

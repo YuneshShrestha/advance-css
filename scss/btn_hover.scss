@@ -1,0 +1,54 @@
+@import 'centerize_content';
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif,
+}
+.center{
+    background-color: rgb(20, 20, 82);
+    @include centerize;
+    .layer{
+        position: relative;
+        .register_btn{
+            background-color: blueviolet;
+            color: white;
+            padding: 10px 20px;
+            font-size: 30px;
+            margin: 8px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        &::before{
+            content: "";
+            width: 18%;
+            height: 50%;
+            top: 0%;
+            left: 0%;
+            border-top: 4px solid blueviolet;
+            border-left: 4px solid blueviolet;
+            position: absolute;
+            box-sizing: border-box;
+        }
+        &::after{
+            content: "";
+            width: 18%;
+            height: 50%;
+            right: 0%;
+            bottom: 0%;
+            border-right: 4px solid blueviolet;
+            border-bottom: 4px solid blueviolet;
+            position: absolute;
+            box-sizing: border-box;
+        }
+        &:hover{
+            &::after,&::before{
+                width: 95%;
+                height: 85%;
+                transition: linear 0.5s;
+            }
+        }
+    }
+}
