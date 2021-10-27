@@ -1,0 +1,59 @@
+@import "centerize_content";
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #000D6B;
+    font-family: 'Times New Roman', Times, serif
+}
+.center{
+    @include centerize;
+    .card{
+        border: 2px solid #9C19E0;
+        width: 400px;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        transition: 0.8s;
+        .card-image{
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            border-radius: 50%;
+            top: -30%;
+            box-sizing: border-box;
+            img{
+                border: 20px solid #000D6B;
+                object-fit: cover;
+                width: 100%;
+                border-radius: 50%;
+                height: 100%;   
+            }
+        }
+        &:hover{
+            height: 300px;
+        }
+        &:hover> .card-content{
+            
+            opacity: 1;
+            color: #99DDCC ;
+            font-size: 18px;
+            letter-spacing: 0.8px;
+            top: 31%;
+        }
+        .card-content{
+            position: absolute;
+            top: -150px;
+            opacity: 0;
+            text-align: start;
+            padding: 20px;
+            transition: 0.8s;
+            z-index: -1;
+            
+        }
+    }
+}

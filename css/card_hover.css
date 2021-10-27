@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #000D6B;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.center {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.center .card {
+  border: 2px solid #9C19E0;
+  width: 400px;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+.center .card .card-image {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  border-radius: 50%;
+  top: -30%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.center .card .card-image img {
+  border: 20px solid #000D6B;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  border-radius: 50%;
+  height: 100%;
+}
+
+.center .card:hover {
+  height: 300px;
+}
+
+.center .card:hover > .card-content {
+  opacity: 1;
+  color: #99DDCC;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  top: 31%;
+}
+
+.center .card .card-content {
+  position: absolute;
+  top: -150px;
+  opacity: 0;
+  text-align: start;
+  padding: 20px;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+  z-index: -1;
+}
+/*# sourceMappingURL=card_hover.css.map */
