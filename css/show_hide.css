@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.center {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.center .card {
+  width: 400px;
+  height: 300px;
+  border: 1px solid #3D0000;
+  background-color: #950101;
+  color: #fff;
+  border-radius: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  line-height: 20px;
+  padding: 0 20px;
+  -webkit-clip-path: circle(33.7% at 100% 0);
+          clip-path: circle(33.7% at 100% 0);
+  -webkit-transition: all .8s;
+  transition: all .8s;
+}
+
+.center .card h1 {
+  padding-bottom: 20px;
+}
+
+.center .card:hover {
+  -webkit-clip-path: circle(141.4% at 100% 0);
+          clip-path: circle(141.4% at 100% 0);
+}
+/*# sourceMappingURL=show_hide.css.map */

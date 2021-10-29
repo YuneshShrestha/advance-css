@@ -67,7 +67,7 @@ body {
 .center .layer:hover::after, .center .layer:hover::before {
   width: 95%;
   height: 85%;
-  -webkit-transition: linear 0.5s;
-  transition: linear 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 /*# sourceMappingURL=btn_hover.css.map */
