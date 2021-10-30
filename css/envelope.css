@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+body .btn {
+  background-color: blueviolet;
+  padding: 8px 16px;
+  font-size: 40px;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  position: relative;
+}
+
+body .btn::before {
+  content: "Button";
+  position: absolute;
+  background-color: #142142;
+  padding: 8px 16px;
+  top: 0%;
+  left: 0%;
+  text-transform: uppercase;
+  font-size: 40px;
+  color: white;
+  -webkit-transform: rotateX(270deg);
+          transform: rotateX(270deg);
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+body .btn:hover::before {
+  -webkit-transform: rotateX(0deg);
+          transform: rotateX(0deg);
+}
+
+body .btn::after {
+  content: "Button";
+  position: absolute;
+  background-color: #012fa3;
+  padding: 8px 16px;
+  top: 0%;
+  left: 0%;
+  text-transform: uppercase;
+  font-size: 40px;
+  color: white;
+  -webkit-transform: rotateX(270deg);
+          transform: rotateX(270deg);
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+  -webkit-transition-delay: 0.8s;
+          transition-delay: 0.8s;
+}
+
+body .btn:hover::after {
+  -webkit-transform: rotateX(0deg);
+          transform: rotateX(0deg);
+}
+/*# sourceMappingURL=envelope.css.map */
