@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100%;
+        }
+        /* .icon{
+            width: 100px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            background-color: white;
+            border: 50px solid rgb(48, 9, 9);
+           box-sizing: border-box;
+        } */
+        /* .icon::before{
+            content: "";
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: rgb(80, 66, 94);
+            z-index: -1;
+            animation: pulse 1s linear infinite alternate-reverse;
+        } */
+        /* @keyframes pulse{
+            0%{
+                opacity: 1;
+                width: 120px;
+                height: 120px;
+            }
+            50%{
+                opacity: 0.8;
+                width: 140px;
+                height: 140px;
+            }
+            100%{
+                opacity: 0.8;
+                width: 160px;
+                height: 160px;
+            }
+
+        }
+        .icon i{
+           font-size: 100px;
+           color: blueviolet;
+        } */
+        /* .icon{
+            position: absolute;
+        } */
+        .border{
+            position: absolute;
+            border: 10px solid rgba(76, 12, 78, 0.925);
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            animation: pulse 1.4s linear infinite;
+        }
+        .border-1{
+            animation-delay: 0.2s;
+        }
+        .border-2{
+            animation-delay: 0.8s;
+        }
+        @keyframes pulse {
+            0%{
+                transform: scale(0.8);
+                opacity: 1;
+            }
+            
+            100%{
+                transform: scale(1.2);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="icon">
+        <i class="fas fa-play-circle" style="font-size: 100px; color: blueviolet;"></i>
+    </div>
+    <div class="border border-1"></div>
+    <div class="border border-2"></div>
+</body>
+</html>
