@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Pseudo</title>
+    <style>
+        .container_size{
+            width: 70vw;
+            margin: 0 auto;
+        }
+        p{
+            color: black;
+            font-size: 0.8rem;
+        }
+        .container_first::first-letter{
+            color: blueviolet;
+            font-size: 2rem;
+            font-weight: bold;
+            float: left;
+            /* display: block; */
+            margin: 0 0.5rem 0 0;
+            line-height: 2.4rem;
+        }
+        .container_first::first-line{
+            color: black;
+            font-weight: 900;
+        }
+    </style>
+</head>
+<body>
+    <div class="container_size">
+        <p class="container_first">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, reiciendis reprehenderit recusandae quaerat sint quibusdam necessitatibus iste dolorum alias est mollitia veritatis cum praesentium quod atque porro architecto quae? Sunt. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum corporis libero molestiae vel. Saepe quibusdam aliquam praesentium commodi dolorem quo laudantium explicabo ipsum itaque voluptate sequi, accusantium sed nemo quasi? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, reiciendis reprehenderit recusandae quaerat sint quibusdam necessitatibus iste dolorum alias est mollitia veritatis cum praesentium quod atque porro architecto quae? Sunt. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum corporis libero molestiae vel. Saepe quibusdam aliquam praesentium commodi dolorem quo laudantium explicabo ipsum itaque voluptate sequi, accusantium sed nemo quasi?
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, reiciendis reprehenderit recusandae quaerat sint quibusdam necessitatibus iste dolorum alias est mollitia veritatis cum praesentium quod atque porro architecto quae? Sunt. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum corporis libero molestiae vel. Saepe quibusdam aliquam praesentium commodi dolorem quo laudantium explicabo ipsum itaque voluptate sequi, accusantium sed nemo quasi?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, reiciendis reprehenderit recusandae quaerat sint quibusdam necessitatibus iste dolorum alias est mollitia veritatis cum praesentium quod atque porro architecto quae? Sunt. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum corporis libero molestiae vel. Saepe quibusdam aliquam praesentium commodi dolorem quo laudantium explicabo ipsum itaque voluptate sequi, accusantium sed nemo quasi?
+        </p>
+
+    </div>
+</body>
+</html>
