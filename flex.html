@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .card{
+            /* margin: 20px; */
+            /* width: 400px; */
+            height: 200px;
+            flex: 1 1 400px;
+
+            background-color: blueviolet;
+            color: white;
+            display: grid;
+            place-items: center;
+            margin: 10px;
+            box-shadow: 7px 9px 16px 0px rgba(0,0,0,0.75);
+        }
+        .card:first-child{
+            background-color: tomato;
+        }
+        .card:last-child{
+            background-color: violet;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="row">
+            <div class="card">
+                Hello World
+            </div>
+            <div class="card">
+                Hello World
+            </div>
+            <div class="card">
+                Hello World
+            </div>
+        </div>
+    </div>
+</body>
+</html>
